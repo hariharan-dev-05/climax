@@ -1,0 +1,440 @@
+/* Imorting Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Universal Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Main Container */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 50px;
+  z-index: 13;
+}
+
+#ham {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#ham-src {
+  height: 40px;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Content Styling */
+.text-content {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  padding: 20px;
+  background: rgba(7, 59, 58, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.content {
+  padding: 30px;
+  flex-basis: 60%;
+}
+
+.heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.subHeading {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Background Slide Styling */
+.bgSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+/* Initially, set the first div to be visible */
+#bgSlide1 {
+  opacity: 1;
+}
+
+/* Countdown Timer Styling */
+
+.timer {
+  flex-basis: 30%;
+  padding: 20px;
+}
+
+.countdown-item {
+  font-size: 30px;
+}
+
+.timer {
+  font-size: 1.2em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timing {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day {
+  font-size: 150px;
+}
+
+/* Sidebar */
+
+#sidebar {
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: -100dvw;
+  background: rgba(7, 59, 58, 1);
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.flex-div-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-div {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 600px;
+  margin-left: 100px;
+}
+
+.team-img {
+  height: 200px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.tm-img-1,
+.tm-img-2,
+.tm-img-3 {
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  width: fit-content;
+  position: absolute;
+}
+
+.team-2 {
+  height: 210px;
+}
+
+.tm-img-1 {
+  top: 15px;
+  left: 10px;
+}
+
+.tm-img-2 {
+  top: 160px;
+  right: 10px;
+}
+
+.tm-img-3 {
+  bottom: 0;
+  left: 0;
+}
+
+.side-bar-content {
+  color: #fff;
+  flex-basis: 60%;
+  padding: 30px 50px 30px 30px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.sidebar-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.sidebar-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Media Queries */
+
+/* Tablet Screen */
+
+@media (max-width: 811px) {
+  .navbar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  #ham-src {
+    height: 35px;
+  }
+
+  .text-content {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .para {
+    font-size: 14px;
+  }
+
+  .subHeading {
+    font-size: 0.8em;
+  }
+
+  .timer {
+    flex-basis: 30%;
+    padding: 20px 0 0 0;
+  }
+
+  .countdown-item {
+    font-size: 20px;
+    padding: 0 5px;
+    font-size: 1em;
+  }
+
+  .timer {
+    font-size: 1em;
+  }
+
+  .day {
+    font-size: 100px;
+  }
+
+  .img-div {
+    flex-basis: 40%;
+    height: 400px;
+    position: relative;
+  }
+
+  .team-img {
+    height: 130px;
+    padding: 5px;
+  }
+  
+  .tm-img-1 {
+    top: 0;
+    left: 5px;
+  }
+  
+  .tm-img-2 {
+    top: 120px;
+    right: 0;
+  }
+  
+  .tm-img-3 {
+    bottom: -20px;
+    left: 5px;
+  }
+
+  .side-bar-content {
+    flex-basis: 60%;
+    width: 100%;
+  }
+
+  .content {
+    padding: 10px;
+    width: 70%;
+  }
+
+  .side-content {
+    width: 100%;
+  }
+
+  .sidebar-heading {
+    font-size: 19px;
+  }
+
+  .sidebar-sub-heading {
+    margin-top: 7px;
+    font-size: 15px;
+  }
+
+  .sidebar-para {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .sidebar-footer {
+    padding: 20px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Screen */
+
+@media (max-width: 426px) {
+  .navbar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  #ham-src {
+    height: 35px;
+  }
+
+  .text-content {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .para {
+    font-size: 14px;
+  }
+
+  .subHeading {
+    font-size: 0.8em;
+  }
+
+  .timer {
+    flex-basis: 30%;
+    padding: 20px 0 0 0;
+  }
+
+  .countdown-item {
+    font-size: 20px;
+    padding: 0 5px;
+    font-size: 1em;
+  }
+
+  .timer {
+    font-size: 1em;
+  }
+
+  .day {
+    font-size: 75px;
+  }
+
+  .flex-div-side {
+    display: block;
+  }
+
+  .img-div {
+    display: none;
+  }
+
+  .side-bar-content {
+    color: #fff;
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+  }
+
+  .content {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .sidebar-heading {
+    font-size: 19px;
+  }
+
+  .sidebar-sub-heading {
+    margin-top: 7px;
+    font-size: 15px;
+  }
+
+  .sidebar-para {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .sidebar-footer {
+    padding: 20px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
