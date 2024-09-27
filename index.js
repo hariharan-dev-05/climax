@@ -49,7 +49,7 @@ setInterval(changeBackgroundImage, changeInterval);
 
 // Countdown Timer Logic
 const timerElement = document.querySelector('.count-down');
-const countdownDate = new Date('2024-09-15T00:00:00').getTime() + (20 * 24 * 60 * 60 * 1000); // 20 days from September 15, 2024
+const countdownDate = new Date('2024-10-11T00:00:00').getTime(); // Countdown to October 10, 2024
 
 function updateCountdown() {
     const now = new Date().getTime();
